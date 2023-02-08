@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 50px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #submitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #movieInfo {
+    margin-top: 50px;
+    text-align: left;
+  }
+  
