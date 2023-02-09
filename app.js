@@ -1,6 +1,4 @@
-// JavaScript file
-// import API_KEY from "./apiKey";
-
+//Pagination
 let page = 1;
 const btnBefore = document.getElementById("btnBefore");
 const btnNext = document.getElementById("btnNext");
