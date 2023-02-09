@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-  }
-  
+  font-family: 'Montserrat', sans-serif;
+  background: #e0e0e0;
+  color: #1d1d1d;
+}
   .container {
     width: 80%;
     margin: 0 auto;
@@ -17,10 +24,11 @@ body {
     margin-right: 10px;
   }
   
-  #submitButton {
+  #submitButton, #submit {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: lightblue;
+    background-color: #241744;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -31,3 +39,107 @@ body {
     text-align: left;
   }
   
+  h1 {
+    text-align: center;
+  }
+  
+  .popularMovies {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+  .popularMovies .movie,
+  .movieInfo .movie{
+    text-align: center;
+  }
+  .popularMovies .movie .title,
+  .movieInfo .movie .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .popularMovies .movie .poster{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 300px;
+  }
+  .movieInfo .movie .poster{
+    width:400px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    position: fixed;
+    bottom: 0;
+    background: #100a1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .pagination button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: #241744;
+    color: #fff;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: .3s ease all;
+  }
+  
+  .pagination button:hover, #submitButton:hover, #submit:hover {
+    background: #137c32;
+  }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

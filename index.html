@@ -9,13 +9,28 @@
 </head>
 <body>
         <div class="container">
+          <br>
           <h1>Movie Information</h1>
           <form>
             <label for="movieName">Movie Name:</label>
             <input type="text" id="movieName" name="movieName">
             <button type="button" id="submitButton">Submit</button>
           </form>
-          <div id="movieInfo"></div>
+          <!-- Modal -->
+<div class="modal" id="movieModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="movieInfo" id="movieInfo"></div>
+  </div>
+</div>
+          <div class = "movieInfo" id="movieInfo"></div>
+        </div>
+        <br/>
+        <h1>Popular Movies</h1>
+        <div class="popularMovies" id="popularMovies"></div>
+        <div class="pagination">
+          <button id="btnBefore"><</button>
+          <button id="btnNext">></button>
         </div>
         <script src="app.js"></script>
 </body>
